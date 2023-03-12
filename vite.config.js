@@ -9,4 +9,5 @@ export default defineConfig({
   build: {
     target: 'es2016',
   },
+  base: "./",
 });
