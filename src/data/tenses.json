@@ -1,0 +1,149 @@
+{
+    "preterite": {
+        "type": "swap",
+        "ar": {
+            "yo": "é",
+            "tú": "aste",
+            "él": "ó",
+            "nosotros": "amos",
+            "vosotros": "asteis",
+            "ellos": "aron"
+        },
+        "er": {
+            "yo": "í",
+            "tú": "iste",
+            "él": "ió",
+            "nosotros": "imos",
+            "vosotros": "isteis",
+            "ellos": "ieron"
+        },
+        "ir": {
+            "yo": "í",
+            "tú": "iste",
+            "él": "ió",
+            "nosotros": "imos",
+            "vosotros": "isteis",
+            "ellos": "ieron"
+        }
+    },
+    "imperfect": {
+        "type": "swap",
+        "ar": {
+            "yo": "aba",
+            "tú": "abas",
+            "él": "aba",
+            "nosotros": "ábamos",
+            "vosotros": "abais",
+            "ellos": "aban"
+        },
+        "er": {
+            "yo": "ía",
+            "tú": "ías",
+            "él": "ía",
+            "nosotros": "íamos",
+            "vosotros": "íais",
+            "ellos": "ían"
+        },
+        "ir": {
+            "yo": "ía",
+            "tú": "ías",
+            "él": "ía",
+            "nosotros": "íamos",
+            "vosotros": "íais",
+            "ellos": "ían"
+        }
+    },
+    "present": {
+        "type": "swap",
+        "ar": {
+            "yo": "o",
+            "tú": "as",
+            "él": "a",
+            "nosotros": "amos",
+            "vosotros": "áis",
+            "ellos": "an"
+        },
+        "er": {
+            "yo": "o",
+            "tú": "es",
+            "él": "e",
+            "nosotros": "emos",
+            "vosotros": "éis",
+            "ellos": "en"
+        },
+        "ir": {
+            "yo": "o",
+            "tú": "es",
+            "él": "e",
+            "nosotros": "imos",
+            "vosotros": "ís",
+            "ellos": "en"
+        }
+    },
+    "future": {
+        "type": "add",
+        "ar": {
+            "yo": "é",
+            "tú": "ás",
+            "él": "á",
+            "nosotros": "emos",
+            "vosotros": "éis",
+            "ellos": "án"
+        },
+        "er": {
+            "yo": "é",
+            "tú": "ás",
+            "él": "á",
+            "nosotros": "emos",
+            "vosotros": "éis",
+            "ellos": "án"
+        },
+        "ir": {
+            "yo": "é",
+            "tú": "ás",
+            "él": "á",
+            "nosotros": "emos",
+            "vosotros": "éis",
+            "ellos": "án"
+        }
+    },
+    "conditional": {
+        "type": "add",
+        "ar": {
+            "yo": "ía",
+            "tú": "ías",
+            "él": "ía",
+            "nosotros": "íamos",
+            "vosotros": "íais",
+            "ellos": "ían"
+        },
+        "er": {
+            "yo": "ía",
+            "tú": "ías",
+            "él": "ía",
+            "nosotros": "íamos",
+            "vosotros": "íais",
+            "ellos": "ían"
+        },
+        "ir": {
+            "yo": "ía",
+            "tú": "ías",
+            "él": "ía",
+            "nosotros": "íamos",
+            "vosotros": "íais",
+            "ellos": "ían"
+        }
+    },
+    "near future": {
+        "type": "prefix",
+        "prefix": {
+            "yo": "voy a",
+            "tú": "vas a",
+            "él": "va a",
+            "nosotros": "vamos a",
+            "vosotros": "vais a",
+            "ellos": "van a"
+        }
+    }
+
+}

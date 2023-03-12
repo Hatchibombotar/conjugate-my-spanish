@@ -1,0 +1,426 @@
+[
+    {
+        "infinitive": "comer",
+        "english": "to eat"
+    },
+    {
+        "infinitive": "ser",
+        "english": "to be (permanent)",
+        "irregulars": {
+            "present": {
+                "yo": "soy",
+                "tú": "eres",
+                "él": "es",
+                "nosotros": "somos",
+                "vosotros": "sois",
+                "ellos": "son"
+            },
+            "preterite": {
+                "yo": "fui",
+                "tú": "fuiste",
+                "él": "fue",
+                "nosotros": "fuimos",
+                "vosotros": "fuisteis",
+                "ellos": "fueron"
+            },
+            "imperfect": {
+                "yo": "era",
+                "tú": "eras",
+                "él": "era",
+                "nosotros": "éramos",
+                "vosotros": "erais",
+                "ellos": "eran"
+            }
+        }
+    },
+    {
+        "infinitive": "tener",
+        "english": "to have",
+        "irregulars": {
+            "present": {
+                "yo": "tengo",
+                "tú": "tienes",
+                "él": "tiene",
+                "ellos": "tienen"
+            },
+            "future": {
+                "yo": "tendré",
+                "tú": "tendrás",
+                "él": "tendrá",
+                "nosotros": "tendremos",
+                "vosotros": "tendreís",
+                "ellos": "tendrán"
+            },
+            "preterite": {
+                "yo": "tuve",
+                "tú": "tuviste",
+                "él": "tuvo",
+                "nosotros": "tuvimos",
+                "vosotros": "tuvisteis",
+                "ellos": "tuvieron"
+            },
+            "conditional": {
+                "yo": "tendría",
+                "tú": "tendrías",
+                "él": "tendría",
+                "nosotros": "tendríamos",
+                "vosotros": "tendríais",
+                "ellos": "tendrían"
+            }
+        }
+    },
+    {
+        "infinitive": "hacer",
+        "english": "to do, to make",
+        "irregulars": {
+            "present": {
+                "yo": "hago"
+            },
+            "future": {
+                "yo": "haré",
+                "tú": "harás",
+                "él": "hará",
+                "nosotros": "haremos",
+                "vosotros": "haréis",
+                "ellos": "harán"
+            },
+            "preterite": {
+                "yo": "hice",
+                "tú": "hiciste",
+                "él": "hizo",
+                "nosotros": "hizimos",
+                "vosotros": "hicisteis",
+                "ellos": "hicieron"
+            },
+            "conditional": {
+                "yo": "haría",
+                "tú": "harías",
+                "él": "haría",
+                "nosotros": "haríamos",
+                "vosotros": "haríais",
+                "ellos": "harían"
+            }
+            
+        }
+    },
+    {
+        "infinitive": "poder",
+        "english": "to be able, can",
+        "irregulars": {
+            "present": {
+                "yo": "puedo",
+                "tú": "puedes",
+                "él": "puede",
+                "ellos": "pueden"
+            },
+            "future": {
+                "yo": "podré",
+                "tú": "podrás",
+                "él": "podrá",
+                "nosotros": "podremos",
+                "vosotros": "podréis",
+                "ellos": "podrán"
+            },
+            "preterite": {
+                "yo": "pude",
+                "tú": "pudiste",
+                "él": "pudo",
+                "nosotros": "pudimos",
+                "vosotros": "pudisteis",
+                "ellos": "pudieron"
+            },
+            "conditional": {
+                "yo": "podría",
+                "tú": "podrías",
+                "él": "podría",
+                "nosotros": "podríamos",
+                "vosotros": "podríais",
+                "ellos": "podrían"
+            }
+        }
+    },
+    {
+        "infinitive": "decir",
+        "english": "to say, tell",
+        "irregulars": {
+            "present": {
+                "yo": "digo",
+                "tú": "dices",
+                "él": "dice",
+                "ellos": "dicen"
+            },
+            "future": {
+                "yo": "diré",
+                "tú": "dirás",
+                "él": "dirá",
+                "nosotros": "diremos",
+                "vosotros": "diréis",
+                "ellos": "dirán"
+            },
+            "preterite": {
+                "yo": "dije",
+                "tú": "dijiste",
+                "él": "dijo",
+                "nosotros": "dijimos",
+                "vosotros": "dijisteis",
+                "ellos": "dijeron"
+            },
+            "conditional": {
+                "yo": "diría",
+                "tú": "dirías",
+                "él": "diría",
+                "nosotros": "diríamos",
+                "vosotros": "diríais",
+                "ellos": "dirían"
+            }
+        }
+    },
+    {
+        "infinitive": "ir",
+        "english": "to go",
+        "irregulars": {
+            "present": {
+                "yo": "voy",
+                "tú": "vas",
+                "él": "va",
+                "nosotros": "vamos",
+                "vosotros": "vais",
+                "ellos": "van"
+            },
+            "preterite": {
+                "yo": "fui",
+                "tú": "fuiste",
+                "él": "fue",
+                "nosotros": "fuimos",
+                "vosotros": "fuisteis",
+                "ellos": "fueron"
+            },
+            "imperfect": {
+                "yo": "iba",
+                "tú": "ibas",
+                "él": "iba",
+                "nosotros": "ibamos",
+                "vosotros": "ibais",
+                "ellos": "iban"
+            }
+        }
+    },
+    {
+        "infinitive": "ver",
+        "english": "to see",
+        "irregulars": {
+            "present": {
+                "yo": "veo",
+                "vosotros": "veis"
+            },
+            "preterite": {
+                "yo": "vi",
+                "él": "vio"
+            }
+        }
+    },
+    {
+        "infinitive": "dar",
+        "english": "to give",
+        "irregulars": {
+            "present": {
+                "yo": "doy",
+                "vosotros": "dais"
+            },
+            "preterite": {
+                "yo": "di",
+                "tú": "diste",
+                "él": "dio",
+                "nosotros": "dimos",
+                "vosotros": "disteis",
+                "ellos": "dieron"
+            }
+        }
+    },
+    {
+        "infinitive": "saber",
+        "english": "to know",
+        "irregulars": {
+            "present": {
+                "yo": "sé"
+            },
+            "future": {
+                "yo": "sabré",
+                "tú": "sabrás",
+                "él": "sabrá",
+                "nosotros": "sabremos",
+                "vosotros": "sabréis",
+                "ellos": "sabrán"
+            },
+            "preterite": {
+                "yo": "supe",
+                "tú": "supiste",
+                "él": "supo",
+                "nosotros": "supimos",
+                "vosotros": "supimos",
+                "ellos": "supimos"
+            },
+            "conditional": {
+                "yo": "sabría",
+                "tú": "sabrías",
+                "él": "sabría",
+                "nosotros": "sabríamos",
+                "vosotros": "sabríais",
+                "ellos": "sabrían"
+            }
+        }
+    },
+    {
+        "infinitive": "querer",
+        "english": "to want",
+        "irregulars": {
+            "present": {
+                "yo": "quiero",
+                "tú": "quieres",
+                "él": "quiere",
+                "ellos": "quieren"
+            },
+            "future": {
+                "yo": "querré",
+                "tú": "querrás",
+                "él": "querrá",
+                "nosotros": "querremos",
+                "vosotros": "querremos",
+                "ellos": "querrán"
+            },
+            "preterite": {
+                "yo": "quise",
+                "tú": "quisiste",
+                "él": "quiso",
+                "nosotros": "quisimos",
+                "vosotros": "quisisteis",
+                "ellos": "quisieron"
+            },
+            "conditional": {
+                "yo": "querría",
+                "tú": "querrías",
+                "él": "querría",
+                "nosotros": "querríamos",
+                "vosotros": "querríais",
+                "ellos": "querrían"
+            }
+        }
+    },
+    {
+        "infinitive": "llegar",
+        "english": "to arrive, come, reach",
+        "irregulars": {
+            "preterite": {
+                "yo": "llegué"
+            }
+        }
+    },
+    {
+        "infinitive": "pasar",
+        "english": "to pass, to spend (time), to happen"
+    },
+    {
+        "infinitive": "deber",
+        "english": "to owe, must, should, ought to"
+    },
+    {
+        "infinitive": "poner",
+        "english": "to put, place, set",
+        "irregulars": {
+            "present": {
+                "yo": "pongo"
+            },
+            "future": {
+                "yo": "pondré",
+                "tú": "pondrás",
+                "él": "pondrá",
+                "nosotros": "pondremos",
+                "vosotros": "pondréis",
+                "ellos": "pondrán"
+            },
+            "preterite": {
+                "yo": "puse",
+                "tú": "pusiste",
+                "él": "puso",
+                "nosotros": "pusimos",
+                "vosotros": "pusisteis",
+                "ellos": "pusieron"
+            },
+            "conditional": {
+                "yo": "pondría",
+                "tú": "pondrías",
+                "él": "pondría",
+                "nosotros": "pondríamos",
+                "vosotros": "pondríais",
+                "ellos": "pondrían"
+            }
+        }
+    },
+    {
+        "infinitive": "parecer",
+        "english": "to seem, appear",
+        "irregulars": {
+            "present": {
+                "yo": "parezco"
+            }
+        }
+    },
+    {
+        "infinitive": "quedar",
+        "english": "to stay, remain"
+    },
+    {
+        "infinitive": "creer",
+        "english": "to believe",
+        "irregulars": {
+            "preterite": {
+                "él": "creyó",
+                "ellos": "creyeron"
+            }
+        }
+    },
+    {
+        "infinitive": "hablar",
+        "english": "to speak"
+    },
+    {
+        "infinitive": "llevar",
+        "english": "to carry, bring"
+    },
+    {
+        "infinitive": "dejar",
+        "english": "to leave, abandon, allow"
+    },
+    {
+        "infinitive": "seguir",
+        "english": "to follow",
+        "irregulars": {
+            "present": {
+                "yo": "sigo",
+                "tú": "sigues",
+                "él": "sigue",
+                "ellos": "siguen"
+            },
+            "preterite": {
+                "él": "siguió",
+                "ellos": "siguieron"
+            }
+        }
+    },
+    {
+        "infinitive": "encontrar",
+        "english": "to find",
+        "irregulars": {
+            "present": {
+                "yo": "encuentro",
+                "tú": "encuentras",
+                "él": "encuentra",
+                "ellos": "encuentran"
+            }
+        }
+    },
+    {
+        "infinitive": "llamar",
+        "english": "to call, to name"
+    }
+]

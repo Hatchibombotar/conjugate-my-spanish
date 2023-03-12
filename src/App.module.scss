@@ -1,0 +1,76 @@
+.App {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-foreground: #bbbbbb;
+  --secondary-foreground: #e1e1e1;
+  
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+input, button {
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #0f0f0f;
+  background-color: #ffffff;
+  transition: border-color 0.25s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+  margin: 8px 4px;
+}
+
+button {
+  cursor: pointer;
+}
+
+h3 {
+  margin: 0;
+}
+h4 {
+  font-weight: normal;
+  .targetConjugation {
+    font-weight: bold;  
+  }
+}
+h5 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.scores {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  h2 {
+    margin: 10px;
+    font-weight: n;
+    .red {
+      color: rgb(235, 77, 41);
+    }
+    .green {
+      color: rgb(24, 114, 24);
+    }
+  }
+}
