@@ -1,12 +1,14 @@
 {
   "name": "Conjugate My Spanish",
   "short_name": "Web App",
-  "start_url": "https://hatchibombotar.com/conjugate-my-spanish",
+  "start_url": "https://hatchibombotar.com/conjugate-my-spanish/",
+  "scope": "https://hatchibombotar.com/conjugate-my-spanish/",
   "icons": [
     {
       "src": "icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
-  ]
+  ],
+  "display": "standalone"
 }
