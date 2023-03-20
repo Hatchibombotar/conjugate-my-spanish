@@ -1,5 +1,5 @@
 .App {
-  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -15,7 +15,7 @@
 
   --primary-foreground: #bbbbbb;
   --secondary-foreground: #e1e1e1;
-  
+
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -24,10 +24,11 @@
   height: 100vh;
 
   overflow: hidden;
-  
+
 }
 
-input, button {
+input,
+button {
   outline: none;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -50,12 +51,15 @@ button {
 h3 {
   margin: 0;
 }
+
 h4 {
   font-weight: normal;
+
   .targetConjugation {
-    font-weight: bold;  
+    font-weight: bold;
   }
 }
+
 h5 {
   margin: 0;
   font-weight: normal;
@@ -69,11 +73,25 @@ h5 {
   h2 {
     margin: 10px;
     font-weight: n;
+
     .red {
       color: rgb(235, 77, 41);
     }
+
     .green {
       color: rgb(24, 114, 24);
     }
   }
 }
+
+.answerText {
+  font-weight: bold;
+  &.correct {
+    color: rgb(24, 114, 24);
+  
+  }
+  &.incorrect {
+    color: rgb(235, 77, 41);
+  }
+}
+
