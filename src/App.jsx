@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import styles from './App.module.scss';
-import { createSignal } from 'solid-js';
+import { createEffect, createSignal } from 'solid-js';
+import Markdown from 'solid-markdown';
+
+import { ImCross } from 'solid-icons/im'
 
 import verbData from "./data/verbs.json"
 import tenseData from "./data/tenses.json"
@@ -26,16 +29,30 @@ const [totalCount, setTotalAmount] = createSignal(0)
 const [showAnswer, setShowAnswer] = createSignal(false)
 const [answerStatus, setAnswerStatus] = createSignal(true)
 
+const [showTips, setTipsVisibility] = createSignal(false)
+
 let inputBox;
 
 const correctSound = new Sound(600, 0.1, 100, "sine")
 const incorrectSound = new Sound(100, 0.3, 140, "triangle")
 
+document.onkeydown = (event) => {
+  if (event.key == "Enter") {
+    if (showAnswer()) {
+      setShowAnswer(false)
+      assignRandomQuestion()
+    } else {
+      confirmAnswer()
+    }
+  }
+}
+
 function App() {
+  createSignal(() => inputBox.focus())
+  
   return (
     <div
       class={styles.App}
-      onkeydown={(event) => event.key == "Enter" && confirmAnswer()}
     >
       <div class={styles.scores}>
         <h2><a class={styles.green}>{correctCount()}</a>/{totalCount()} correct</h2>
@@ -46,14 +63,20 @@ function App() {
         <h4>Conjugate into the <a class={styles.targetConjugation}>{targetConjugation().tense}</a> tense for the <a class={styles.targetConjugation}>{targetConjugation().person}</a> form{isIrregular() ? <a> (irregular)</a> : <a></a>}.</h4>
 
         <Show when={!showAnswer()}>
-          <input type='text' ref={inputBox} lang='es' onInput={(event) => setUserInput(event.currentTarget.value)}></input>
+          <input ref={inputBox} lang='es' onInput={(event) => setUserInput(event.currentTarget.value)} autocomplete="none"></input>
           <button type='button' onclick={confirmAnswer}>Confirm</button>
         </Show>
 
         <Show when={showAnswer()}>
           <AnswerBox />
         </Show>
+        <div>
+          <a class={styles.link} onclick={() => setTipsVisibility(!showTips())}>Tips</a>
+        </div>
       </div>
+      <Show when={showTips()}>
+        <Tips />
+      </Show>
     </div>
   )
 }
@@ -69,15 +92,28 @@ function assignRandomQuestion() {
   const infinitiveEnding = currentVerb().infinitive.slice(-2)
   setCurrentVerb(verbData[randomNumber(0, verbData.length - 1)])
 
-  if (currentVerb()?.irregulars === undefined) {
+  if (currentVerb() === undefined) {
     setAsIrregular(false)
     return
   }
+
+  if (currentVerb().irregulars === undefined) {
+    setAsIrregular(false)
+    return
+  }
+
+  if (currentVerb().irregulars[targetConjugation().tense] === undefined) {
+    setAsIrregular(false)
+    return
+  }
+
   if (currentVerb()?.irregulars[targetConjugation().tense][targetConjugation().person] !== undefined) {
     setAsIrregular(true)
   } else {
     setAsIrregular(false)
   }
+
+  inputBox.focus()
 }
 
 function conjugate(infinitive, tense, person) {
@@ -103,7 +139,7 @@ function conjugate(infinitive, tense, person) {
 function AnswerBox() {
   return <div>
     <p>
-      You Said: 
+      You Said:&nbsp;
       <a
         classList={
           {
@@ -115,17 +151,17 @@ function AnswerBox() {
       >{userInput()}</a>
     </p>
     <Show when={answerStatus() == false}>
-    <p>
-      Correct Answer: 
-      <a
-        classList={
-          {
-            [styles.answerText]: true,
-            [styles.correct]: true,
+      <p>
+        Correct Answer:&nbsp;
+        <a
+          classList={
+            {
+              [styles.answerText]: true,
+              [styles.correct]: true,
+            }
           }
-        }
-      >{correctAnswer()}</a>
-    </p>
+        >{correctAnswer()}</a>
+      </p>
     </Show>
     <button type='button' onclick={() => {
       setShowAnswer(false)
@@ -154,6 +190,33 @@ function confirmAnswer() {
   setCorrectAnswer(correctAnswer)
 
   setShowAnswer(true)
+}
+
+function Tips({ tense }) {
+  const currentTense = () => targetConjugation().tense
+  return <div class={styles.tipsContainer} onclick={() => setTipsVisibility(false)}>
+    <div class={styles.tips} onclick={(e) => e.stopPropagation()}>
+    <ImCross class={styles.closeTips} onclick={() => setTipsVisibility(false)}/>
+      <h2>The {currentTense()} tense:</h2>
+      <table>
+        {<tr>
+          <th>person</th>
+          <th>-ar</th>
+          <th>-er</th>
+          <th>-ir</th>
+        </tr>}
+
+        <For each={possiblePeople()}>{(person) =>
+          <tr>
+            <td>{person}</td>
+            <td>{tenseData[currentTense()].ar[person]}</td>
+            <td>{tenseData[currentTense()].er[person]}</td>
+            <td>{tenseData[currentTense()].ir[person]}</td>
+          </tr>
+        }</For>
+      </table>
+    </div>
+  </div>
 }
 
 

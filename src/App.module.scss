@@ -86,12 +86,77 @@ h5 {
 
 .answerText {
   font-weight: bold;
+
   &.correct {
     color: rgb(24, 114, 24);
-  
+
   }
+
   &.incorrect {
     color: rgb(235, 77, 41);
   }
 }
 
+a.link {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+.tipsContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5151514a;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .tips {
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    width: 75vw;
+    height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    table {
+      font-family: arial, sans-serif;
+      margin: 10px;
+      border-collapse: collapse;
+      border-radius: 10px;
+      border: 1px solid gray;
+      width: 50vw;
+
+      td,
+      th {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 0.6em 1.2em;
+        font-size: 1em;
+        background: #ffffff;
+        // box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+      }
+
+      tr > td:first-child {
+        border-right: 1px solid gray;
+      }
+    }
+
+    .closeTips {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+  }
+}
