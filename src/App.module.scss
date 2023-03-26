@@ -158,5 +158,9 @@ a.link {
       cursor: pointer;
     }
 
+    @media (max-width:500px) {
+      width: 95vw;
+      height: 95vh;
+    }
   }
 }
